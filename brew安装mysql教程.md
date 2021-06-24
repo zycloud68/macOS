@@ -97,4 +97,5 @@ All done!
 ```
 > mysql -u root -p
 > 输入密码：
+> show databases;
 ```
