@@ -12,7 +12,7 @@
 
 4. 删除 `/usr/local/bin` 下的任意 `node` 的可执行文件
 
-   可以使用一下命令代替以上繁琐的工作：
+可以使用一下命令代替以上繁琐的工作：
 
 #### 第一种方式：
 
@@ -40,6 +40,7 @@ $ sudo rm /usr/local/lib/dtrace/node.d
 ```
 
 以上三种任选其一，然后测试nvm，node，npm的命令是否依然存在。
+### homebrew卸载可能存在的node文件
 
 ```bash
 brew uninstall node
