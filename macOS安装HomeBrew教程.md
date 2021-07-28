@@ -62,14 +62,11 @@ source ~/.zshrc
 HOMEBREW_BOTTLE_DOMAIN 这一行删掉
 执行 source ~/.bash_profile || source ~/.zshrc9
 ```
-### 官方cask搜索 homebrew cask
-[Homebrew Cask](https://formulae.brew.sh/cask/)
-
 ### 应用升级
 首先执行brew update命令，可以看到那些需要更新的命令
 ```java
-$ brew upgrade              # 更新所有
-$ brew upgrade <package>    # 更新指定软件
+ brew upgrade              # 更新所有
+ brew upgrade <package>    # 更新指定软件
 ```
 然后执行brew upgrade xxx 执行需要更新的包，例如更新iterm2就是
 ```bash
@@ -77,12 +74,45 @@ brew upgrade iterm2
 ```
 ### 应用安装卸载
 ```bash
-$ brew install <package>
-$ brew install  <package> --cask
+ brew install <package>
+ brew install  <package> --cask
 ```
 以上搜索命令，可以看到搜索关键词 google，结果会出现 Formulae 和 Casks 两种分类，有何区别？
 ```bash
 「Formulae」一般是那些命令行工具、开发库、字体、插件等不含 GUI 界面的软件。
 「Cask」是指那些含有 GUI 图形化界面的软件，如 Google Chrome、FireFox 、Atom 等。
 ```
+### 列出可更新的软件
+```bash
+brew outdated
+```
+### 清理旧版本软件
+```bash
+ brew cleanup            # 清理所有旧版本的包
+ brew cleanup <package>  # 清理指定的旧版本包
+ brew cleanup -n         # 查看可清理的旧版本包
+```
+### 强制卸载某个软件
+```bash
+ brew uninstall --force <package>
+```
+### 锁定某个不想更新的软件
+```bash
+ brew pin <package>       # 锁定指定包
+ brew unpin <package>     # 取消锁定指定包
+```
+### 查看已安装软件的依赖
+```bash
+brew deps --installed --tree
+```
+### 查看软件的信息
+```bash
+ brew info <package>     # 显示某个包信息
+ brew info               # 显示安装的软件数量、文件数量以及占用空间
+```
 
+### 参考文档
+[Homebrew Cask](https://formulae.brew.sh/cask/)
+[macOS Homebrew Cask](https://zhuanlan.zhihu.com/p/30704752)
+[homebrew-cask](https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md)
+[Homebrew 源使用帮助](http://mirrors.ustc.edu.cn/help/brew.git.html)
