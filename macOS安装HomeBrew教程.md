@@ -112,7 +112,7 @@ brew deps --installed --tree
 ```
 
 ### 参考文档
-[Homebrew Cask](https://formulae.brew.sh/cask/)
-[macOS Homebrew Cask](https://zhuanlan.zhihu.com/p/30704752)
-[homebrew-cask](https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md)
-[Homebrew 源使用帮助](http://mirrors.ustc.edu.cn/help/brew.git.html)
+- [Homebrew Cask](https://formulae.brew.sh/cask/)
+- [macOS Homebrew Cask](https://zhuanlan.zhihu.com/p/30704752)
+- [homebrew-cask](https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md)
+- [Homebrew 源使用帮助](http://mirrors.ustc.edu.cn/help/brew.git.html)
