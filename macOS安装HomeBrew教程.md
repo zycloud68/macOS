@@ -62,7 +62,7 @@ source ~/.zshrc
 HOMEBREW_BOTTLE_DOMAIN 这一行删掉
 执行 source ~/.bash_profile || source ~/.zshrc9
 ```
-### homebrew cask
+### 官方cask搜索 homebrew cask
 [Homebrew Cask](https://formulae.brew.sh/cask/)
 
 ### 应用升级
