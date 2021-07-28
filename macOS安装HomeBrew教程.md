@@ -64,3 +64,14 @@ HOMEBREW_BOTTLE_DOMAIN 这一行删掉
 ```
 ### homebrew cask
 [Homebrew Cask](https://formulae.brew.sh/cask/)
+
+### 应用升级
+首先执行brew update命令，可以看到那些需要更新的命令
+```java
+brew update
+```
+然后执行brew upgrade xxx 执行需要更新的包，例如更新iterm2就是
+```bash
+brew upgrade iterm2
+```
+
