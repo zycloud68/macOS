@@ -4,13 +4,22 @@ brew install mysql (默认安装mysql的最新版)
 // 安装mysql5.7版本
 brew install mysql@5.7 
 ```
-### 2. 更改配置
+### 2. 配置环境变量
+```bash
+vim ~/.zshrc
+# 添加以下代码
+export PATH=${PATH}:/usr/local/Cellar/mysql@5.7/5.7.31/bin
+# 重新执行刚修改的初始化文件: source ~/.zshrc
+source ~/.zshrc
+```
+### 3. 更改配置
 ```
 运行 sudo mysql.server start 
 运行 mysql_secure_installation
 运行 brew service start mysql 可以后台启动mysql
 运行 mysql.server start 前台启动mysql(关闭控制台，服务停止)
 ```
+
 ```
  // 出现一下错误，证明mysql没有启动
  > mysql_secure_installation
