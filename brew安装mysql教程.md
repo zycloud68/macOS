@@ -19,7 +19,13 @@ source ~/.zshrc
 运行 brew service start mysql 可以后台启动mysql
 运行 mysql.server start 前台启动mysql(关闭控制台，服务停止)
 ```
-
+#### 3.1 启动服务器
+```bash
+启动mysql服务器：
+sudo mysql.server start
+关闭服务器：
+sudo mysql.servet stop
+```
 ```bash
  // 出现一下错误，证明mysql没有启动
  > mysql_secure_installation
@@ -108,3 +114,4 @@ All done!
 > 输入密码：
 > show databases;
 ```
+
