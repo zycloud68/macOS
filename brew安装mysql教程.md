@@ -13,14 +13,14 @@ export PATH=${PATH}:/usr/local/Cellar/mysql@5.7/5.7.31/bin
 source ~/.zshrc
 ```
 ### 3. 更改配置
-```
+```bash
 运行 sudo mysql.server start 
 运行 mysql_secure_installation
 运行 brew service start mysql 可以后台启动mysql
 运行 mysql.server start 前台启动mysql(关闭控制台，服务停止)
 ```
 
-```
+```bash
  // 出现一下错误，证明mysql没有启动
  > mysql_secure_installation
 Securing the MySQL server deployment.
@@ -28,7 +28,7 @@ Enter password for user root:
 Error: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
 ```
 ### 4. 修改密码
-```
+```bash
  > sudo mysql_secure_installation
 Securing the MySQL server deployment.
 
@@ -103,7 +103,7 @@ Success.
 All done!
 ```
 ### 5.连接数据库mysql
-```
+```bash
 > mysql -u root -p
 > 输入密码：
 > show databases;
